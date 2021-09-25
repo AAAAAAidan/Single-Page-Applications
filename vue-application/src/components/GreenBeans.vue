@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'green beans',
+  name: "green beans",
   props: {
     food: String
   }

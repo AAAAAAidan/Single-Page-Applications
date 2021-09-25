@@ -3,10 +3,10 @@
 </template>
 
 <script>
-import GreenBeans from './components/GreenBeans.vue'
+import GreenBeans from "./components/GreenBeans.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     GreenBeans
   }

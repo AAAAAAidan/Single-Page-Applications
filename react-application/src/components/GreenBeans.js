@@ -1,5 +1,5 @@
-import damon from '../assets/damon.gif';
-import './GreenBeans.css';
+import damon from "../assets/damon.gif";
+import "./GreenBeans.css";
 
 function GreenBeans() {
   const food = "green beans";
