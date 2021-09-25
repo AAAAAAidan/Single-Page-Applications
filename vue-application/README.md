@@ -1,6 +1,6 @@
 # Vue Application
 
-A simple application for practice with Vue. This project was bootstrapped with Vue CLI.
+A simple application for practice with Vue. This project was bootstrapped with [Vue CLI](https://cli.vuejs.org/guide).
 
 ## Project setup
 
