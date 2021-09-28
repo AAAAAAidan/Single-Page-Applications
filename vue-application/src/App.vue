@@ -54,7 +54,8 @@ a {
   color: lightblue;
 }
 
-img {
+img,
+video {
   max-height: 100%;
   max-width: 100%;
 }

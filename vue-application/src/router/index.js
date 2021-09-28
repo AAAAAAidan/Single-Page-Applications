@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router"
-import FolderGallery from "../views/FolderGallery.vue"
-import FileGallery from "../views/FileGallery.vue"
+import Folders from "../views/Folders.vue"
+import Folder from "../views/Folder.vue"
 import Home from "../views/Home.vue"
 
 const routes = [
@@ -11,13 +11,13 @@ const routes = [
   },
   {
     path: "/folders",
-    name: "FolderGallery",
-    component: FolderGallery
+    name: "Folders",
+    component: Folders
   },
   {
     path: "/folders/:id",
-    name: "FileGallery",
-    component: FileGallery,
+    name: "Folder",
+    component: Folder,
     props: true
   },
   // Redirect 404 errors to the home page

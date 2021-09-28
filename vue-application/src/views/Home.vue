@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{ name: 'FolderGallery' }"><img alt="Damon Gant" src="../assets/damon.gif"></router-link>
+  <router-link :to="{ name: 'Folders' }"><img alt="Damon Gant" src="../assets/damon.gif"></router-link>
 </template>
 
 <script>
