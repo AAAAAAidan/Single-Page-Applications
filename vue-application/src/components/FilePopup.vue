@@ -7,7 +7,7 @@
         Your browser does not support the video element.
       </video>
       <audio controls v-else-if="getFileType() == 'audio'">
-        <source :src="require('../assets/' + filename)" type="audio/wav">
+        <source :src="require('../assets/' + filename)" type="audio/wav" />
         Your browser does not support the audio element.
       </audio>
       <p v-else>Unsupported file type</p>
@@ -23,14 +23,11 @@ export default {
     getFileType() {
       if (this.filename.match(/.(png|jpg|jpeg|gif)$/)) {
         return "img";
-      }
-      else if (this.filename.match(".(mp3|flac|wav)$")) {
+      } else if (this.filename.match(".(mp3|flac|wav)$")) {
         return "audio";
-      }
-      else if (this.filename.match(".(mp4|mkv)$")) {
+      } else if (this.filename.match(".(mp4|mkv)$")) {
         return "video";
-      }
-      else {
+      } else {
         return null;
       }
     },

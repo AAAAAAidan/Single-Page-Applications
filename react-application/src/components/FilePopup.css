@@ -1,0 +1,16 @@
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.pop-up {
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  position: fixed;
+}

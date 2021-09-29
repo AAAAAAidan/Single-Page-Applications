@@ -1,0 +1,10 @@
+.link-style-button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: lightblue;
+  text-decoration: underline;
+  font-family: inherit;
+  font-size: inherit;
+}

@@ -1,5 +1,43 @@
-header {
+html {
+  height: 100%;
+  background-color: #222222;
+  color: yellow;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+#app {
+  min-height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column;
+}
+
+main {
+  flex-grow: 1;
+  padding: 3.9px 39px;
+}
+
+header,
+footer {
+  text-align: center;
+  background-image: url("./assets/damon.gif");
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+a {
+  color: lightblue;
+}
+
+img,
+video {
+  max-height: 100%;
+  max-width: 100%;
 }

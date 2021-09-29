@@ -4,7 +4,7 @@
   <SearchBar @updateSearch="updateSearch" />
   <!-- Display the files -->
   <ul v-if="files">
-    <li v-for="file in selectedFiles">
+    <li v-for="file in selectedFiles" :key="file">
       <button @click="togglePopup(file)" class="link-style-button">{{ file }}</button>
     </li>
   </ul>
@@ -34,7 +34,6 @@ export default {
   },
   methods: {
     updateSearch(searchTerms) {
-      console.log(searchTerms)
       this.selectedFiles = this.files.filter((file) => file.toLowerCase().includes(searchTerms.toLowerCase()))
     },
     togglePopup(file) {
@@ -43,17 +42,12 @@ export default {
     }
   },
   mounted() {
-    // TODO - Finish building the API so I can use fetch
-    // fetch("https://aidan.contact/api/folders/id")
-    // .then(response => response.json())
-    // .then(data => this.folder = data)
-    // .catch(error => console.log(error))
-
-    // For now, set the folders manually
+    // Ideally, this would contain an API fetch
+    // But for now, we'll set the folders manually
     const folders = [
       { id: 0, name: "Ace Attorney", files: ["damon.gif", "notguilty.jpg", "apolloobjection.wav"] },
       { id: 1, name: "The Silver Case", files: ["spinninginachair.mp4", "glgiscoming.jpg", "glgishere.jpg", "ohthatsphoenixwright.jpg"] },
-      { id: 2, name: "Gallant Geese", files: ["goose1.jpg", "goose3.jpg", "goose3.jpg"] },
+      { id: 2, name: "Gallant Geese", files: ["goose1.jpg", "goose2.jpg", "goose3.jpg"] },
       { id: 3, name: "My Favorites", files: ["damon.gif", "spinninginachair.mp4", "goose2.jpg"] }
     ]
     this.files = folders[this.$route.params.id].files

@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1><router-link :to="{ name: 'Home' }" class="yellow-strings">Aidan Zamboni: Ace Jabroni</router-link></h1>
+    <h1>
+      <router-link :to="{ name: 'Home' }" class="yellow-strings">Aidan Zamboni: Ace Jabroni</router-link>
+    </h1>
   </header>
 </template>
 
